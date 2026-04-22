@@ -4,6 +4,7 @@ using UnityEngine;
 public class MovementSystem : MonoBehaviour
 {
     public float movespeed = 10f;
+    public float movespeed_mod = 0f;
     public Vector2 movedir = new Vector2(0, 0);
 
     protected Rigidbody2D rb;
@@ -34,5 +35,10 @@ public class MovementSystem : MonoBehaviour
         movedir = Vector2.zero;
         if (rb != null)
             rb.linearVelocity = Vector2.zero;
+    }
+
+    public void moveSpeedModifier(float n)
+    {
+        movespeed_mod = n;
     }
 }

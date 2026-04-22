@@ -29,7 +29,7 @@ public class Player : MovementSystem
         if (Keyboard.current.aKey.isPressed) input.x -= 1f;
 
         movespeed = Keyboard.current.leftShiftKey.isPressed ? RunningSpeed : _baseSpeed;
-
+        movespeed += movespeed_mod;
         SetMoveDirection(input);
     }
 }
