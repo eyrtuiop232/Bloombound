@@ -129,7 +129,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Bush
     originalName: 
-    pivot: {x: 0.56, y: -0.2}
+    pivot: {x: 0.56, y: 0.34}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 

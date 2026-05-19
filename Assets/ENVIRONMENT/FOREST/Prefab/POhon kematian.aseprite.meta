@@ -129,7 +129,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: POhon kematian
     originalName: 
-    pivot: {x: 0.50877196, y: 0}
+    pivot: {x: 0.50877196, y: 0.21}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 

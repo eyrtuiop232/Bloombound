@@ -129,7 +129,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Pohon
     originalName: 
-    pivot: {x: 0.51724136, y: 0}
+    pivot: {x: 0.51724136, y: 0.09}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
