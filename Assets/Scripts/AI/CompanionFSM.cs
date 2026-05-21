@@ -5,7 +5,9 @@ public class CompanionFSM : MonoBehaviour
 {
     NavMeshAgent agent;
     public Transform player;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private string CurrentState = "Idle";
+    public float StopDistance = 10f;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -13,15 +15,38 @@ public class CompanionFSM : MonoBehaviour
         agent.updateUpAxis = false;
     }
 
+    void StopImmediately()
+    {
+        agent.isStopped = true;
+        agent.SetDestination(Vector2.zero);
+        agent.velocity = Vector3.zero;
+    }
+
     void Update()
     {
-        agent.SetDestination(player.position);
-        // Get the position of the next waypoint (steering target)
-        Vector3 nextWaypointPosition = agent.steeringTarget;
+        float Distance = Vector2.Distance(transform.position, player.position);
+        switch (CurrentState)
+        {
+            case "Idle":
+                if (Distance > StopDistance)
+                {
+                    CurrentState = "Follow";
+                }
+                StopImmediately();
+                break;
 
-        // You can use this position for various purposes, e.g., drawing a debug line
-        Debug.DrawLine(transform.position, nextWaypointPosition, Color.red);
+            case "Follow":
+                if (Distance <= StopDistance)
+                {
+                    CurrentState = "Idle";
+                }
+                agent.SetDestination(player.position);
+                Vector3 nextWaypointPosition = agent.steeringTarget;
+                Debug.DrawLine(transform.position, nextWaypointPosition, Color.red);
+                break;
 
-        print("Next Waypoint Position: " + agent.nextPosition);
+            default:
+                break;
+        }
     }
 }
