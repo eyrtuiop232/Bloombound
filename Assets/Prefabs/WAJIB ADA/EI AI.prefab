@@ -9,14 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 273283331544793253}
-  - component: {fileID: 850862187844890375}
-  - component: {fileID: 1152251757856432620}
   - component: {fileID: 1377249910923102796}
   - component: {fileID: 6407189111764973372}
   - component: {fileID: 1379154486275904880}
-  - component: {fileID: 3710303015897406507}
   m_Layer: 0
-  m_Name: Player
+  m_Name: EI AI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37,34 +34,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &850862187844890375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4492838191561519272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53bc30fc25e7b3d41b69677a1f0c0e1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movespeed: 5
-  movespeed_mod: 0
-  movedir: {x: 0, y: 0}
-  RunningSpeed: 10
---- !u!114 &1152251757856432620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4492838191561519272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1f33ee40bb0bbe4d82424a3678195c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1377249910923102796
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -110,7 +79,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_Sprite: {fileID: -1151807911365347540, guid: 09616ff8297a3ce469a01fbe413f2164, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4575472, g: 0.6847644, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -183,45 +152,3 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!114 &3710303015897406507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4492838191561519272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e12c5ccd9b7d4ec499bdbebb36db3ff6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnWaterEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 850862187844890375}
-        m_TargetAssemblyTypeName: MovementSystem, Assembly-CSharp
-        m_MethodName: moveSpeedModifier
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: -3
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnWaterExit:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 850862187844890375}
-        m_TargetAssemblyTypeName: MovementSystem, Assembly-CSharp
-        m_MethodName: moveSpeedModifier
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
