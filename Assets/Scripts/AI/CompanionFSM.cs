@@ -18,7 +18,7 @@ public class CompanionFSM : MonoBehaviour
     void StopImmediately()
     {
         agent.isStopped = true;
-        agent.SetDestination(Vector2.zero);
+        agent.ResetPath();
         agent.velocity = Vector3.zero;
     }
 
@@ -29,13 +29,13 @@ public class CompanionFSM : MonoBehaviour
         {
             case "Idle":
                 if (Distance > StopDistance)
-                {
                     CurrentState = "Follow";
-                }
-                StopImmediately();
+                else
+                    StopImmediately();
                 break;
 
             case "Follow":
+                agent.isStopped = false;
                 if (Distance <= StopDistance)
                 {
                     CurrentState = "Idle";
