@@ -1,11 +1,17 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+public enum PlayerState { Enabled, Disabled }
+
 public class Player : MovementSystem
 {
     public float RunningSpeed = 20f;
+    public PlayerState State = PlayerState.Enabled;
 
     private float _baseSpeed;
+
+    public void EnablePlayer()  => State = PlayerState.Enabled;
+    public void DisablePlayer() => State = PlayerState.Disabled;
 
     protected override void Start()
     {
@@ -21,6 +27,12 @@ public class Player : MovementSystem
 
     private void ReadInput()
     {
+        if (State == PlayerState.Disabled)
+        {
+            SetMoveDirection(Vector2.zero);
+            return;
+        }
+
         Vector2 input = Vector2.zero;
 
         if (Keyboard.current.wKey.isPressed) input.y += 1f;
