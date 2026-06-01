@@ -5,6 +5,7 @@ using UnityEngine;
 public class DialogTrigger : Interaction
 {
     public DialogData dialog;
+    public DialogCanvas display;
 
     public void Trigger()
     {
@@ -16,7 +17,7 @@ public class DialogTrigger : Interaction
 
         if (DialogManager.Instance.IsActive) return;
 
-        DialogManager.Instance.StartDialog(dialog);
+        DialogManager.Instance.StartDialog(dialog, display);
     }
 
     public override void Interact(GameObject interactor)

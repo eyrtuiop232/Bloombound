@@ -4,9 +4,8 @@ public class DialogManager : MonoBehaviour
 {
     public static DialogManager Instance { get; private set; }
 
-    [SerializeField] private DialogCanvas _canvas;
-
     private DialogData _current;
+    private IDialogDisplay _activeDisplay;
 
     private void Awake()
     {
@@ -18,13 +17,14 @@ public class DialogManager : MonoBehaviour
         Instance = this;
     }
 
-    public void StartDialog(DialogData data)
+    public void StartDialog(DialogData data, IDialogDisplay display)
     {
         if (data == null) return;
 
+        _activeDisplay = display;
         _current = data;
         _current.onDialogStart.Invoke();
-        _canvas.ShowDialog(data, this);
+        _activeDisplay.ShowDialog(data, this);
     }
 
     // Called by the continue button (no-choice dialogs)
@@ -36,7 +36,7 @@ public class DialogManager : MonoBehaviour
         if (_current.HasNext)
         {
             _current.onDialogContinue.Invoke();
-            StartDialog(_current.nextDialog);
+            StartDialog(_current.nextDialog, _activeDisplay);
         }
         else
         {
@@ -52,7 +52,7 @@ public class DialogManager : MonoBehaviour
         _current.onDialogContinue.Invoke();
 
         if (nextDialog != null)
-            StartDialog(nextDialog);
+            StartDialog(nextDialog, _activeDisplay);
         else
             EndDialog();
     }
@@ -61,7 +61,8 @@ public class DialogManager : MonoBehaviour
     {
         _current.onDialogEnd.Invoke();
         _current = null;
-        _canvas.HideDialog();
+        _activeDisplay.HideDialog();
+        _activeDisplay = null;
     }
 
     public bool IsActive => _current != null;
