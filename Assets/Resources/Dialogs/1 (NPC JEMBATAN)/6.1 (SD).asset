@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e27504c0ce948a4dbae268149743c21, type: 3}
+  m_Name: 6.1 (SD)
+  m_EditorClassIdentifier: 
+  speakerName: Widge
+  dialogText: Kek, mau nanya dong.
+  nextDialog: {fileID: 0}
+  choices:
+  - choiceText: Kakek siapa?
+    nextDialog: {fileID: 11400000, guid: 90ebe6fab2a98e749886ee381ca745d7, type: 2}
+  - choiceText: Ini dimana ya?
+    nextDialog: {fileID: 11400000, guid: dfa16981b08328f41816cfd6aa607a9e, type: 2}
+  - choiceText: Cara pergi dari sini gimana ya?
+    nextDialog: {fileID: 11400000, guid: ece32e5b183fd7b4993bebcaf1a2f41e, type: 2}
+  onDialogStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onDialogContinue:
+    m_PersistentCalls:
+      m_Calls: []
+  onDialogEnd:
+    m_PersistentCalls:
+      m_Calls: []

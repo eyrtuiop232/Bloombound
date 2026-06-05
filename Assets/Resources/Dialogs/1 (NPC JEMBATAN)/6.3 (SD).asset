@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e27504c0ce948a4dbae268149743c21, type: 3}
+  m_Name: 6.3 (SD)
+  m_EditorClassIdentifier: 
+  speakerName: Widge
+  dialogText: Loh... Jangan dong. Kasian dia udah seneng gitu ketemu kita. Fans berat
+    ini.
+  nextDialog: {fileID: 0}
+  choices:
+  - choiceText: Gajadi pergi
+    nextDialog: {fileID: 11400000, guid: d3c194c1748885d46be2e1c772b3e2d4, type: 2}
+  - choiceText: Peduli apa gwe
+    nextDialog: {fileID: 11400000, guid: e1c8f0f3599c94040b96fa0137904118, type: 2}
+  onDialogStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onDialogContinue:
+    m_PersistentCalls:
+      m_Calls: []
+  onDialogEnd:
+    m_PersistentCalls:
+      m_Calls: []
