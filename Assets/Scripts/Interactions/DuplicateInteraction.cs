@@ -6,11 +6,9 @@ public class DuplicateInteraction : Interaction
 {
     public UnityEvent interactStuffs;
     public List<GameObject> objectToDuplicate;
-    public bool isEnabled = true;
+
     public override void Interact(GameObject interactor)
     {
-        if (!isEnabled) return;
-
         foreach (GameObject obj in objectToDuplicate)
         {
             if (obj == null) continue;
@@ -20,15 +18,5 @@ public class DuplicateInteraction : Interaction
         }
 
         interactStuffs.Invoke();
-    }
-
-    public void disable()
-    {
-        isEnabled = false;
-    }
-
-    public void enable()
-    {
-        isEnabled = true;
     }
 }

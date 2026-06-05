@@ -3,6 +3,8 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 public class Interaction : MonoBehaviour
 {
+    public bool isEnabled = true;
+
     private Collider2D m_collider;
 
     protected virtual void Start()
@@ -10,6 +12,9 @@ public class Interaction : MonoBehaviour
         m_collider = GetComponent<Collider2D>();
         m_collider.isTrigger = true;
     }
+
+    public void enable()  => isEnabled = true;
+    public void disable() => isEnabled = false;
 
     // Called by Interactor when the player presses the interact key
     public virtual void Interact(GameObject interactor)
@@ -30,6 +35,8 @@ public class Interaction : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log($"[Interaction] OnTriggerEnter2D fired. Other: {other.gameObject.name}");
+
+        if (!isEnabled) return;
 
         Interactor interactor = other.GetComponent<Interactor>();
         if (interactor == null)

@@ -4,7 +4,6 @@ using UnityEngine.Events;
 public class RantingInteraction : Interaction
 {
     public UnityEvent interactStuffs;
-    public bool isEnabled = true;
 
     [Header("Fly Follow")]
     public Vector3 followOffset = new Vector3(0f, 1.5f, 0f);
@@ -14,8 +13,6 @@ public class RantingInteraction : Interaction
 
     public override void Interact(GameObject interactor)
     {
-        if (!isEnabled) return;
-
         interactStuffs.Invoke();
         _followTarget = interactor.transform;
     }
@@ -28,6 +25,4 @@ public class RantingInteraction : Interaction
         transform.position = Vector3.Lerp(transform.position, targetPos, followSpeed * Time.deltaTime);
     }
 
-    public void disable() => isEnabled = false;
-    public void enable()  => isEnabled = true;
 }
