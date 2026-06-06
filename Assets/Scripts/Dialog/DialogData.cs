@@ -9,6 +9,7 @@ public class DialogData : ScriptableObject
     public string speakerName;
     [TextArea(2, 5)]
     public string dialogText;
+    public GameObject typewriterSound;
 
     [Header("Progression")]
     public DialogData nextDialog;       // used when there are no choices

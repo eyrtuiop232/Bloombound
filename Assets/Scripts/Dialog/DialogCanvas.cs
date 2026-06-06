@@ -36,6 +36,7 @@ public class DialogCanvas : MonoBehaviour, IDialogDisplay
     private readonly List<Button> _spawnedButtons = new();
     private Coroutine _typewriterCoroutine;
     private bool _typingDone;
+    private AudioSource _typewriterSource;
 
     private void Awake()
     {
@@ -63,6 +64,7 @@ public class DialogCanvas : MonoBehaviour, IDialogDisplay
         StopAllCoroutines();
         _typewriterCoroutine = null;
 
+        SetupTypewriterSource(data.typewriterSound);
         ClearChoices();
 
         if (data.HasChoices)
@@ -91,11 +93,28 @@ public class DialogCanvas : MonoBehaviour, IDialogDisplay
         StopAllCoroutines();
         _typewriterCoroutine = null;
 
+        DestroyTypewriterSource();
         ClearChoices();
         dialogPanel.SetActive(false);
 
         if (disablePlayer && _player != null)
             _player.EnablePlayer();
+    }
+
+    private void SetupTypewriterSource(GameObject prefab)
+    {
+        DestroyTypewriterSource();
+        if (prefab == null) return;
+        _typewriterSource = Instantiate(prefab, transform).GetComponent<AudioSource>();
+        _typewriterSource.playOnAwake = false;
+        _typewriterSource.Stop();
+    }
+
+    private void DestroyTypewriterSource()
+    {
+        if (_typewriterSource == null) return;
+        Destroy(_typewriterSource.gameObject);
+        _typewriterSource = null;
     }
 
     private void StartTypewriter(string text, System.Action onDone)
@@ -127,6 +146,10 @@ public class DialogCanvas : MonoBehaviour, IDialogDisplay
         for (int i = 1; i <= total; i++)
         {
             dialogText.maxVisibleCharacters = i;
+
+            if (_typewriterSource != null && _typewriterSource.clip != null)
+                _typewriterSource.PlayOneShot(_typewriterSource.clip);
+
             yield return new WaitForSeconds(delay);
         }
 

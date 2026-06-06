@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: ???
   dialogText: Ehem...
+  typewriterSound: {fileID: 935132341438679360, guid: 4e180e3b386cc8d4c8ec336ad917fb08, type: 3}
   nextDialog: {fileID: 11400000, guid: 48eae645dc8d1a14b88d99a50794d645, type: 2}
   choices: []
   onDialogStart:

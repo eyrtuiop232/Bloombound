@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Kakek yang Aneh
   dialogText: Benar. Dia orang yang tahu informasi lengkapnya.
+  typewriterSound: {fileID: 935132341438679360, guid: 4e180e3b386cc8d4c8ec336ad917fb08, type: 3}
   nextDialog: {fileID: 11400000, guid: 198300b4ece08d143b08df64c7ca4f86, type: 2}
   choices: []
   onDialogStart:

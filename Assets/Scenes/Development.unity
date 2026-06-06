@@ -557,7 +557,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 997402ce646d1d04bbc1f48fccdf9356, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isEnabled: 1
   dialog: {fileID: 11400000, guid: ea490c45f3984f9488932e68a491669b, type: 2}
+  displays: []
 --- !u!61 &2045560338
 BoxCollider2D:
   m_ObjectHideFlags: 0

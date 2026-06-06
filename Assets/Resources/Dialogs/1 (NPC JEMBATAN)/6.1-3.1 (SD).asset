@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Kakek yang Aneh
   dialogText: EZ- M-Maksudku aku tahu mantra sakti untuk itu.
+  typewriterSound: {fileID: 935132341438679360, guid: 4e180e3b386cc8d4c8ec336ad917fb08, type: 3}
   nextDialog: {fileID: 11400000, guid: 4a1736b9a299e3649957e6d89b90dec1, type: 2}
   choices: []
   onDialogStart:
