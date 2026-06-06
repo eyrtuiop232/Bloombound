@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Ash
   dialogText: Terima kasih atas tips nya yang "sedikit".
+  typewriterSound: {fileID: 7937718865555661868, guid: aa29913f2f720584988c1b6472ed658d, type: 3}
   nextDialog: {fileID: 11400000, guid: bb8870648c408f54397962b1dff3e64d, type: 2}
   choices: []
   onDialogStart:

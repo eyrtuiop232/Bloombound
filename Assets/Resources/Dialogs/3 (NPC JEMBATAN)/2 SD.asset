@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Ash
   dialogText: Kakek tahu dimana kita bisa nemuin "Ka-
+  typewriterSound: {fileID: 7937718865555661868, guid: aa29913f2f720584988c1b6472ed658d, type: 3}
   nextDialog: {fileID: 11400000, guid: bbe3fad798306a249a20365de60a4b4f, type: 2}
   choices: []
   onDialogStart:

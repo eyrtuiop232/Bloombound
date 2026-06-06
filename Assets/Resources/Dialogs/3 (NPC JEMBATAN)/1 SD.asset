@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Kakek yang Aneh
   dialogText: Ohhohhohho... Sepertinya kalian sudah bertemu dengannya.
+  typewriterSound: {fileID: 935132341438679360, guid: 4e180e3b386cc8d4c8ec336ad917fb08, type: 3}
   nextDialog: {fileID: 11400000, guid: 7fec6665b09a35c4f9864339100e47ef, type: 2}
   choices: []
   onDialogStart:

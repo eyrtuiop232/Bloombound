@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Kakek yang Aneh
   dialogText: Ada di rumah nomor 5. Jangan lupa untuk mengetuk ya, dek. Ohho.
+  typewriterSound: {fileID: 935132341438679360, guid: 4e180e3b386cc8d4c8ec336ad917fb08, type: 3}
   nextDialog: {fileID: 11400000, guid: 4f57c407e80dadb43b208736df76fb1d, type: 2}
   choices: []
   onDialogStart:

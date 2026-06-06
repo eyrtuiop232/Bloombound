@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Widge
   dialogText: Eyyo... Misi sukses, Bro!
+  typewriterSound: {fileID: 7937718865555661868, guid: d45b5dcf7861c1440af60f78a2a23c33, type: 3}
   nextDialog: {fileID: 11400000, guid: 9afacf4fa3becbe4f9ce08e9dbf8081e, type: 2}
   choices: []
   onDialogStart:

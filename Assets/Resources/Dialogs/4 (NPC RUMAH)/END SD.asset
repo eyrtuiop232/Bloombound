@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Widge
   dialogText: Rispek.
+  typewriterSound: {fileID: 7937718865555661868, guid: d45b5dcf7861c1440af60f78a2a23c33, type: 3}
   nextDialog: {fileID: 0}
   choices: []
   onDialogStart:

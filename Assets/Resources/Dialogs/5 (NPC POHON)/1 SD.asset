@@ -15,6 +15,7 @@ MonoBehaviour:
   speakerName: Kakek yang Gaul
   dialogText: Omaygat. Klean dah berhasil basmi "Antek-antek Aseng" dan bawain Item
     Legendaris dengan Drop Rate 99.99%. Gokil.
+  typewriterSound: {fileID: 935132341438679360, guid: 4e180e3b386cc8d4c8ec336ad917fb08, type: 3}
   nextDialog: {fileID: 11400000, guid: a8decb37c3b1cb74a8e3f4f02042aec3, type: 2}
   choices: []
   onDialogStart:

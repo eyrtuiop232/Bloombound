@@ -18,6 +18,7 @@ MonoBehaviour:
     selatan. Setelah kamu membasmi hama-hama itu, mereka akan menjatuhkan Item Legendaris
     yang memiliki Drop Rate sebesar 99.99% yang sangat dibutuhkan untuk misi terakhir
     kalian.
+  typewriterSound: {fileID: 935132341438679360, guid: 4e180e3b386cc8d4c8ec336ad917fb08, type: 3}
   nextDialog: {fileID: 11400000, guid: 6e5ea5e4570475b4daefb1c7c052f884, type: 2}
   choices: []
   onDialogStart:

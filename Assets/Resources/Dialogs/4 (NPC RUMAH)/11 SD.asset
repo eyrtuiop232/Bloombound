@@ -15,6 +15,7 @@ MonoBehaviour:
   speakerName: Widge
   dialogText: Bro ngespoiler dengan kesadaran penuh kemudian pergi tanpa melihat
     ke belakang.
+  typewriterSound: {fileID: 7937718865555661868, guid: d45b5dcf7861c1440af60f78a2a23c33, type: 3}
   nextDialog: {fileID: 11400000, guid: 2d225f867b8d0fa41a86ad896cf48c6e, type: 2}
   choices: []
   onDialogStart:
