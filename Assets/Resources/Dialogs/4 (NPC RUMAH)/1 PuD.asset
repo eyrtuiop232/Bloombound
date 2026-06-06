@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: 
   dialogText: Anjay Kakek 3.0
-  nextDialog: {fileID: 11400000, guid: f93861f026d71b742a925d6c394ca77f, type: 2}
+  typewriterSound: {fileID: 0}
+  nextDialog: {fileID: 0}
   choices: []
   onDialogStart:
     m_PersistentCalls:
