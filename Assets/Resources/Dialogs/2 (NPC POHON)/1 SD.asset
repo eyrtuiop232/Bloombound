@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Widge
   dialogText: Wihh... ketemu lagi kita, Kek!
+  typewriterSound: {fileID: 7937718865555661868, guid: d45b5dcf7861c1440af60f78a2a23c33, type: 3}
   nextDialog: {fileID: 11400000, guid: cd16c097089495040930d48f7b5a0277, type: 2}
   choices: []
   onDialogStart:

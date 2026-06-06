@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Kakek yang Gaul
   dialogText: Uhhu... Gweh adalah penjaga pohon ini yang kebetulan tau banyak hal.
+  typewriterSound: {fileID: 935132341438679360, guid: 4e180e3b386cc8d4c8ec336ad917fb08, type: 3}
   nextDialog: {fileID: 11400000, guid: e926eb6860ec09747b41853b80a8d609, type: 2}
   choices: []
   onDialogStart:

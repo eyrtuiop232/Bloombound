@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Ash
   dialogText: Kita ga nanya itu, tapi nais ingfo.
+  typewriterSound: {fileID: 7937718865555661868, guid: aa29913f2f720584988c1b6472ed658d, type: 3}
   nextDialog: {fileID: 11400000, guid: a28a424d3da44e44a9a7be226d988992, type: 2}
   choices: []
   onDialogStart:

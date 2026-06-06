@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Kakek yang Gaul
   dialogText: Alamak... Rilkah rilkah!?
+  typewriterSound: {fileID: 935132341438679360, guid: 4e180e3b386cc8d4c8ec336ad917fb08, type: 3}
   nextDialog: {fileID: 11400000, guid: e7383f747da4bfe46a01743f34d64a55, type: 2}
   choices: []
   onDialogStart:

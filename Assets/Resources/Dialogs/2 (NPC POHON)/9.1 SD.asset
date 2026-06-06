@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Widge
   dialogText: Cup cup cup... Kita bantuin deh.
+  typewriterSound: {fileID: 7937718865555661868, guid: d45b5dcf7861c1440af60f78a2a23c33, type: 3}
   nextDialog: {fileID: 11400000, guid: 8eb1ecc7be0a8674d9b46a6acfd18f50, type: 2}
   choices: []
   onDialogStart:

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Ash
   dialogText: Dimaafkan. Kami pamit. Permisi.
+  typewriterSound: {fileID: 7937718865555661868, guid: aa29913f2f720584988c1b6472ed658d, type: 3}
   nextDialog: {fileID: 11400000, guid: 15afca5a9b8456745aedd953e066791d, type: 2}
   choices: []
   onDialogStart:

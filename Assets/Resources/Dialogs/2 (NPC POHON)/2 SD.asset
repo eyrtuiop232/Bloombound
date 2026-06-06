@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Kakek yang Aneh 2(?)
   dialogText: Uhhu... Afah iyahhh...? Koq gweh ga inget yahh.
+  typewriterSound: {fileID: 935132341438679360, guid: 4e180e3b386cc8d4c8ec336ad917fb08, type: 3}
   nextDialog: {fileID: 11400000, guid: 00ef148f963b09046848aba982739e5b, type: 2}
   choices: []
   onDialogStart:

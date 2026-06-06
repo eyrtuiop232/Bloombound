@@ -15,6 +15,7 @@ MonoBehaviour:
   speakerName: Kakek yang Gaul
   dialogText: "Omaygat. Okeh sung saja. Klean kudu basmi makhluk-makhluk durjana
     itu pake \u300AKapak Sakti Paling OP Aseli mYDesa\u300B."
+  typewriterSound: {fileID: 935132341438679360, guid: 4e180e3b386cc8d4c8ec336ad917fb08, type: 3}
   nextDialog: {fileID: 11400000, guid: 1a5b1c79e175ef346b0ac7a602a1d16c, type: 2}
   choices: []
   onDialogStart:

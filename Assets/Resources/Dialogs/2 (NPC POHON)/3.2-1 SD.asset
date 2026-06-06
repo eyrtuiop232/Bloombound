@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Kakek yang Gaul
   dialogText: EZPZ. Ada mantra sakti turun temurun. Mawu tawu?
+  typewriterSound: {fileID: 935132341438679360, guid: 4e180e3b386cc8d4c8ec336ad917fb08, type: 3}
   nextDialog: {fileID: 11400000, guid: b6de830ff6ae6c74fa4f82aa03aa3c17, type: 2}
   choices: []
   onDialogStart:

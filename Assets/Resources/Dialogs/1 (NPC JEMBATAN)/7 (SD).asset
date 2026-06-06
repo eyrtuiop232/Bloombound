@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Ash
   dialogText: Tadi kakek bilang "Penyelamat". Apa yang kakek maksud?
+  typewriterSound: {fileID: 7937718865555661868, guid: aa29913f2f720584988c1b6472ed658d, type: 3}
   nextDialog: {fileID: 11400000, guid: dd1c396170d2d4349834a65bc63301d7, type: 2}
   choices: []
   onDialogStart:
