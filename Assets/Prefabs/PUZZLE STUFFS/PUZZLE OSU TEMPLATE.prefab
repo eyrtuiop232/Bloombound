@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 297356269457335139}
   - component: {fileID: 6213679155912901108}
   - component: {fileID: 6019209862793740307}
+  - component: {fileID: 7920332686303106422}
   m_Layer: 0
   m_Name: PUZZLE OSU TEMPLATE
   m_TagString: Untagged
@@ -168,7 +169,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 5, y: 5}
+  m_Size: {x: 3, y: 3}
   m_EdgeRadius: 0
 --- !u!114 &6019209862793740307
 MonoBehaviour:
@@ -177,7 +178,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3751454927847685832}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 53cc82eea81bbf54bbef88560328417f, type: 3}
   m_Name: 
@@ -200,6 +201,23 @@ MonoBehaviour:
         m_CallState: 2
   objectToDuplicate:
   - {fileID: 2711453034872212015}
+--- !u!114 &7920332686303106422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3751454927847685832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 997402ce646d1d04bbc1f48fccdf9356, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 1
+  dialog: {fileID: 11400000, guid: 683dbfb7207eaf34a9f99f7fbf774174, type: 2}
+  displays:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1001 &195964644523328501
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -620,7 +638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6825729252702013101, guid: 8b18a2c578fece34484db1853010396f, type: 3}
       propertyPath: onMinigameWin.m_PersistentCalls.m_Calls.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6825729252702013101, guid: 8b18a2c578fece34484db1853010396f, type: 3}
       propertyPath: onMinigameLose.m_PersistentCalls.m_Calls.Array.size
@@ -641,6 +659,10 @@ PrefabInstance:
     - target: {fileID: 6825729252702013101, guid: 8b18a2c578fece34484db1853010396f, type: 3}
       propertyPath: onMinigameWin.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825729252702013101, guid: 8b18a2c578fece34484db1853010396f, type: 3}
+      propertyPath: onMinigameWin.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6825729252702013101, guid: 8b18a2c578fece34484db1853010396f, type: 3}
       propertyPath: onMinigameLose.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -683,6 +705,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6825729252702013101, guid: 8b18a2c578fece34484db1853010396f, type: 3}
+      propertyPath: onMinigameWin.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825729252702013101, guid: 8b18a2c578fece34484db1853010396f, type: 3}
       propertyPath: onMinigameLose.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -705,6 +731,10 @@ PrefabInstance:
     - target: {fileID: 6825729252702013101, guid: 8b18a2c578fece34484db1853010396f, type: 3}
       propertyPath: onMinigameWin.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
       value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825729252702013101, guid: 8b18a2c578fece34484db1853010396f, type: 3}
+      propertyPath: onMinigameWin.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: Increase
       objectReference: {fileID: 0}
     - target: {fileID: 6825729252702013101, guid: 8b18a2c578fece34484db1853010396f, type: 3}
       propertyPath: onMinigameLose.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -731,6 +761,10 @@ PrefabInstance:
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6825729252702013101, guid: 8b18a2c578fece34484db1853010396f, type: 3}
+      propertyPath: onMinigameWin.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: WinCondition, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825729252702013101, guid: 8b18a2c578fece34484db1853010396f, type: 3}
       propertyPath: onMinigameLose.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Player, Assembly-CSharp
       objectReference: {fileID: 0}
@@ -740,6 +774,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6825729252702013101, guid: 8b18a2c578fece34484db1853010396f, type: 3}
       propertyPath: onMinigameWin.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825729252702013101, guid: 8b18a2c578fece34484db1853010396f, type: 3}
+      propertyPath: onMinigameWin.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6825729252702013101, guid: 8b18a2c578fece34484db1853010396f, type: 3}
@@ -764,6 +802,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6825729252702013101, guid: 8b18a2c578fece34484db1853010396f, type: 3}
       propertyPath: onMinigameWin.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825729252702013101, guid: 8b18a2c578fece34484db1853010396f, type: 3}
+      propertyPath: onMinigameWin.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6825729252702013101, guid: 8b18a2c578fece34484db1853010396f, type: 3}

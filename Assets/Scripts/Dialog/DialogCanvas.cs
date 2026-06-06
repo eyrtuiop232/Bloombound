@@ -27,6 +27,11 @@ public class DialogCanvas : MonoBehaviour, IDialogDisplay
     [Tooltip("The child panel to show/hide. Keep the root GameObject always active.")]
     public GameObject dialogPanel;
 
+    [Header("Player")]
+    [Tooltip("Disable the player while this dialog is visible.")]
+    public bool disablePlayer = false;
+
+    private Player _player;
     private DialogManager _manager;
     private readonly List<Button> _spawnedButtons = new();
     private Coroutine _typewriterCoroutine;
@@ -39,12 +44,18 @@ public class DialogCanvas : MonoBehaviour, IDialogDisplay
         if (continueButton != null)
             continueButton.onClick.AddListener(OnContinueClicked);
         dialogPanel.SetActive(false);
+
+        if (disablePlayer)
+            _player = FindObjectOfType<Player>();
     }
 
     public void ShowDialog(DialogData data, DialogManager manager)
     {
         _manager = manager;
         dialogPanel.SetActive(true);
+
+        if (disablePlayer && _player != null)
+            _player.DisablePlayer();
 
         if (speakerNameText != null)
             speakerNameText.text = data.speakerName;
@@ -82,6 +93,9 @@ public class DialogCanvas : MonoBehaviour, IDialogDisplay
 
         ClearChoices();
         dialogPanel.SetActive(false);
+
+        if (disablePlayer && _player != null)
+            _player.EnablePlayer();
     }
 
     private void StartTypewriter(string text, System.Action onDone)
@@ -138,7 +152,7 @@ public class DialogCanvas : MonoBehaviour, IDialogDisplay
     private IEnumerator AutoFinish(float delay)
     {
         yield return new WaitForSeconds(delay);
-        _manager.Continue();
+        _manager.Continue(this);
     }
 
     private void SpawnChoiceButton(DialogChoice choice)
@@ -153,7 +167,7 @@ public class DialogCanvas : MonoBehaviour, IDialogDisplay
             label.text = choice.choiceText;
 
         DialogData next = choice.nextDialog;
-        btn.onClick.AddListener(() => _manager.SelectChoice(next));
+        btn.onClick.AddListener(() => _manager.SelectChoice(next, this));
 
         _spawnedButtons.Add(btn);
     }
@@ -177,6 +191,6 @@ public class DialogCanvas : MonoBehaviour, IDialogDisplay
             return;
         }
 
-        _manager.Continue();
+        _manager.Continue(this);
     }
 }

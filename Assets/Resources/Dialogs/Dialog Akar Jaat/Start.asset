@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e27504c0ce948a4dbae268149743c21, type: 3}
-  m_Name: 1 SD
+  m_Name: Start
   m_EditorClassIdentifier: 
-  speakerName: Kakek yang Gaul
-  dialogText: Omaygat. Klean dah berhasil basmi "Antek-antek Aseng" dan bawain Item
-    Legendaris dengan Drop Rate 99.99%. Gokil.
-  nextDialog: {fileID: 11400000, guid: a8decb37c3b1cb74a8e3f4f02042aec3, type: 2}
+  speakerName: 
+  dialogText: Aku perlu kapak untuk menghancurkan ini...
+  nextDialog: {fileID: 11400000, guid: 925648b8a592bce4395c74a37682d033, type: 2}
   choices: []
   onDialogStart:
     m_PersistentCalls:

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Kakek yang Aneh 2(?)
   dialogText: Uhhuhhu... Halo gess.
-  nextDialog: {fileID: 0}
+  nextDialog: {fileID: 11400000, guid: ac17ca46ffa863b44982cc20d3c3cfcc, type: 2}
   choices: []
   onDialogStart:
     m_PersistentCalls:

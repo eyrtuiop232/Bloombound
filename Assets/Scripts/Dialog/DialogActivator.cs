@@ -1,9 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// Attach to any object that should start a dialog (e.g. an NPC).
-// Pair with the Interaction system: call Trigger() from Interaction.Interact().
-public class DialogTrigger : Interaction
+public class DialogActivator : MonoBehaviour
 {
     public DialogData dialog;
     public List<DialogCanvas> displays;
@@ -12,17 +10,12 @@ public class DialogTrigger : Interaction
     {
         if (DialogManager.Instance == null)
         {
-            Debug.LogWarning("DialogTrigger: No DialogManager found in scene.");
+            Debug.LogWarning("DialogActivator: No DialogManager found in scene.");
             return;
         }
 
         if (displays.Count > 0 && DialogManager.Instance.IsActiveFor(displays[0])) return;
 
         DialogManager.Instance.StartDialog(dialog, displays);
-    }
-
-    public override void Interact(GameObject interactor)
-    {
-        Trigger();
     }
 }

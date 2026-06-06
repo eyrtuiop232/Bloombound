@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Ash
   dialogText: Jadi kakek lagi jagain pohon mati ini?
-  nextDialog: {fileID: 0}
+  nextDialog: {fileID: 11400000, guid: 94fdfbf97c96aa24184781694bdec105, type: 2}
   choices: []
   onDialogStart:
     m_PersistentCalls:

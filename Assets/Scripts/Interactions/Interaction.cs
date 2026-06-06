@@ -36,7 +36,7 @@ public class Interaction : MonoBehaviour
     {
         Debug.Log($"[Interaction] OnTriggerEnter2D fired. Other: {other.gameObject.name}");
 
-        if (!isEnabled) return;
+        if (!isEnabled || !enabled) return;
 
         Interactor interactor = other.GetComponent<Interactor>();
         if (interactor == null)

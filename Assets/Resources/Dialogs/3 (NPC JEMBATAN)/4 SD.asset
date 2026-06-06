@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Ash
   dialogText: ...
-  nextDialog: {fileID: 0}
+  nextDialog: {fileID: 11400000, guid: 332fddf9e8caf914ca698adcd64922d1, type: 2}
   choices: []
   onDialogStart:
     m_PersistentCalls:
