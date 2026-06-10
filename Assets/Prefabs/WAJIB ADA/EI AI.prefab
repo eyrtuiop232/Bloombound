@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4304746063608759557}
   - component: {fileID: 6250521581847185936}
   - component: {fileID: 5957386019622990606}
+  - component: {fileID: 3940443606592751768}
   m_Layer: 0
   m_Name: EI AI
   m_TagString: Untagged
@@ -83,8 +84,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: -1151807911365347540, guid: 09616ff8297a3ce469a01fbe413f2164, type: 3}
-  m_Color: {r: 0.4575472, g: 0.6847644, b: 1, a: 1}
+  m_Sprite: {fileID: -3706774278535015384, guid: fb078fb3a77d7ac469bf8ab627e89c30, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -177,7 +178,7 @@ Animator:
   m_GameObject: {fileID: 4492838191561519272}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2ca274119cc818f4c881b1c3ef21a5f7, type: 2}
+  m_Controller: {fileID: 9100000, guid: c04c21d4336189a4b98183bab9c28ecc, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -204,6 +205,19 @@ MonoBehaviour:
   targetAnimator: {fileID: 6250521581847185936}
   movement: {fileID: 0}
   agent: {fileID: 7814792966256243965}
+--- !u!114 &3940443606592751768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4492838191561519272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4590677fea6ad3840ab00adc7988b8b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeDuration: 2
 --- !u!1 &8447728173873855516
 GameObject:
   m_ObjectHideFlags: 0

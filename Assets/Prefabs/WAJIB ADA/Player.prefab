@@ -309,6 +309,7 @@ GameObject:
   - component: {fileID: 3710303015897406507}
   - component: {fileID: 7120059876121427548}
   - component: {fileID: 1277062310140123609}
+  - component: {fileID: 8056882869391873739}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -352,6 +353,7 @@ MonoBehaviour:
   movedir: {x: 0, y: 0}
   RunningSpeed: 4
   State: 0
+  forceMove: {x: 0, y: 0}
 --- !u!114 &1152251757856432620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,6 +584,19 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3a44530d2c3e06a48ba82a999a463ce4, type: 3}
   - {fileID: 8300000, guid: 8f17e0b68184b2245b559719d8d92175, type: 3}
   interval: 0.35
+--- !u!114 &8056882869391873739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4492838191561519272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4590677fea6ad3840ab00adc7988b8b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeDuration: 2
 --- !u!1 &5435530039892853714
 GameObject:
   m_ObjectHideFlags: 0
