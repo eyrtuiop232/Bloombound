@@ -47,7 +47,7 @@ public class DialogCanvas : MonoBehaviour, IDialogDisplay
         dialogPanel.SetActive(false);
 
         if (disablePlayer)
-            _player = FindObjectOfType<Player>();
+            _player = FindAnyObjectByType<Player>();
     }
 
     public void ShowDialog(DialogData data, DialogManager manager)
