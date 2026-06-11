@@ -1,12 +1,9 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using NavMeshPlus.Extensions;
 using UnityEngine.Tilemaps;
 
-//***********************************************************************************
-// Contributed by author jl-randazzo github.com/jl-randazzo
-//***********************************************************************************
 namespace NavMeshPlus.Components
 {
     [AddComponentMenu("Navigation/Navigation Modifier Tilemap", 33)]
@@ -32,10 +29,8 @@ namespace NavMeshPlus.Components
             public int GetHashCode(TileModifier tileModifier) => tileModifier.GetHashCode();
         }
 
-        // List of agent types the modifier is applied for.
-        // Special values: empty == None, m_AffectedAgents[0] =-1 == All.
         [SerializeField]
-        List<int> m_AffectedAgents = new List<int>(new int[] { -1 });    // Default value is All
+        List<int> m_AffectedAgents = new List<int>(new int[] { -1 });
 
         [SerializeField]
         List<TileModifier> m_TileModifiers = new List<TileModifier>();
@@ -59,7 +54,7 @@ namespace NavMeshPlus.Components
         {
             return m_TileModifiers.Count != m_TileModifiers.Distinct(MatchingTileComparator.Instance).Count();
         }
-#endif // UNITY_EDITOR
+#endif
 
         public virtual bool TryGetTileModifier(Vector3Int coords, Tilemap tilemap, out TileModifier modifier)
         {

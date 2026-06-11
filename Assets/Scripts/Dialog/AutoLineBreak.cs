@@ -1,4 +1,4 @@
-using System.Text;
+﻿using System.Text;
 using TMPro;
 using UnityEngine;
 
@@ -60,7 +60,7 @@ public class AutoLineBreak : MonoBehaviour
 
             if (breakAt == -1)
             {
-                // no space in window, find the next space after the limit
+
                 int next = text.IndexOf(' ', lineStart + maxChars);
                 if (next == -1)
                 {

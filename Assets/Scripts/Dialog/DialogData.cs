@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -12,13 +12,13 @@ public class DialogData : ScriptableObject
     public GameObject typewriterSound;
 
     [Header("Progression")]
-    public DialogData nextDialog;       // used when there are no choices
-    public List<DialogChoice> choices;  // if populated, nextDialog is ignored
+    public DialogData nextDialog;
+    public List<DialogChoice> choices;
 
     [Header("Events")]
     public UnityEvent onDialogStart;
-    public UnityEvent onDialogContinue; // fired when moving to another dialog
-    public UnityEvent onDialogEnd;      // fired when dialog chain ends
+    public UnityEvent onDialogContinue;
+    public UnityEvent onDialogEnd;
 
     public bool HasChoices => choices != null && choices.Count > 0;
     public bool HasNext    => nextDialog != null;

@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
 public class Interaction : MonoBehaviour
@@ -16,18 +16,15 @@ public class Interaction : MonoBehaviour
     public void enable()  => isEnabled = true;
     public void disable() => isEnabled = false;
 
-    // Called by Interactor when the player presses the interact key
     public virtual void Interact(GameObject interactor)
     {
         print(interactor.gameObject.name+" is interacting with "+gameObject.name);
     }
 
-    // Called when an interactor enters range
     public virtual void OnEnterRange(GameObject interactor)
     {
     }
 
-    // Called when an interactor exits range
     public virtual void OnExitRange(GameObject interactor)
     {
     }

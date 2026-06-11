@@ -41,21 +41,18 @@ namespace NavMeshPlus.Extensions
 
             if (disposing)
             {
-                // TODO: dispose managed state (managed objects).
+
                 disposable?.Dispose();
             }
-
-            // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.
-            // TODO: set large fields to null.
 
             _disposed = true;
         }
 
         public void Dispose()
         {
-            // Dispose of unmanaged resources.
+
             Dispose(true);
-            // Suppress finalization.
+
             GC.SuppressFinalize(this);
         }
     }
@@ -84,7 +81,7 @@ namespace NavMeshPlus.Extensions
 
             if (disposing)
             {
-                // TODO: dispose managed state (managed objects).
+
                 foreach (var item in extraStates)
                 {
                     item?.Dispose();
@@ -92,17 +89,14 @@ namespace NavMeshPlus.Extensions
                 extraStates.Clear();
             }
 
-            // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.
-            // TODO: set large fields to null.
-
             _disposed = true;
         }
 
         public void Dispose()
         {
-            // Dispose of unmanaged resources.
+
             Dispose(true);
-            // Suppress finalization.
+
             GC.SuppressFinalize(this);
         }
     }

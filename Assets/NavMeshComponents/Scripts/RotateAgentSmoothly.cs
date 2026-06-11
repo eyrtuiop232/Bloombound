@@ -1,10 +1,7 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
-//***********************************************************************************
-// Contributed by author @Lazy_Sloth from unity forum (https://forum.unity.com/)
-//***********************************************************************************
 namespace NavMeshPlus.Extensions
 {
     public class RotateAgentSmoothly: IAgentOverride

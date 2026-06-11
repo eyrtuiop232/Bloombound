@@ -1,4 +1,4 @@
-using UnityEditor.IMGUI.Controls;
+﻿using UnityEditor.IMGUI.Controls;
 using UnityEditorInternal;
 using UnityEngine;
 using UnityEditor;
@@ -52,7 +52,6 @@ namespace NavMeshPlus.Components.Editors
 
             serializedObject.ApplyModifiedProperties();
         }
-
 
         [DrawGizmo(GizmoType.InSelectionHierarchy | GizmoType.Active)]
         static void RenderBoxGizmo(NavMeshModifierVolume navModifier, GizmoType gizmoType)

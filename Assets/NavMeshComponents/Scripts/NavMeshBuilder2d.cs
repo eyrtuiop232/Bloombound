@@ -25,7 +25,7 @@ namespace NavMeshPlus.Extensions
         public CollectObjects CollectObjects;
         public GameObject parent;
         public bool hideEditorLogs;
-        
+
         protected IEnumerable<GameObject> _root;
         private bool _disposed;
 
@@ -109,7 +109,7 @@ namespace NavMeshPlus.Extensions
 
             if (disposing)
             {
-                // TODO: dispose managed state (managed objects).
+
                 foreach (var item in spriteMeshMap)
                 {
 #if UNITY_EDITOR
@@ -130,17 +130,14 @@ namespace NavMeshPlus.Extensions
                 coliderMeshMap.Clear();
             }
 
-            // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.
-            // TODO: set large fields to null.
-
             _disposed = true;
         }
 
         public void Dispose()
         {
-            // Dispose of unmanaged resources.
+
             Dispose(true);
-            // Suppress finalization.
+
             GC.SuppressFinalize(this);
         }
     }
@@ -169,7 +166,7 @@ namespace NavMeshPlus.Extensions
                     continue;
                 }
                 int area = builder.defaultArea;
-                //if it is walkable
+
                 if (builder.defaultArea != 1 && !modifier.ignoreFromBuild)
                 {
                     AddDefaultWalkableTilemap(sources, builder, modifier);
@@ -355,7 +352,7 @@ namespace NavMeshPlus.Extensions
                 src.shape = NavMeshBuildSourceShape.Mesh;
                 src.sourceObject = sharedMesh;
             }
-            else //default to box
+            else
             {
                 src.transform = GetCellTransformMatrix(tilemap, builder.overrideVector, vec3int);
                 src.shape = NavMeshBuildSourceShape.Box;

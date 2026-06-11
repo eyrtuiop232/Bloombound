@@ -22,7 +22,7 @@ namespace NavMeshPlus.Extensions.Editors
         public override void OnInspectorGUI()
         {
             serializedObject.Update();
-    
+
             var surf = target as CollectSources2d;
 
             EditorGUILayout.PropertyField(m_OverrideByGrid);

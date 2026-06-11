@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -11,15 +11,15 @@ public class BeatTimeCircleHandler : MonoBehaviour
     public Button button;
 
     [Header("Timing")]
-    // Absolute Time.time when the perfect hit should occur — set by the spawner before enabling
+
     public float pressTime;
-    public float approachDuration = 1f;  // Seconds the circle takes to shrink to scale 1
-    public float startScale = 3f;        // Starting scale before approaching
+    public float approachDuration = 1f;
+    public float startScale = 3f;
 
     [Header("Hit Windows (seconds)")]
-    public float perfectWindow = 0.05f;  // ±50 ms  → 300 pts
-    public float goodWindow    = 0.10f;  // ±100 ms → 100 pts
-    public float okWindow      = 0.20f;  // ±200 ms →  50 pts
+    public float perfectWindow = 0.05f;
+    public float goodWindow    = 0.10f;
+    public float okWindow      = 0.20f;
 
     [Header("Indicator")]
     public Color hitColor  = Color.green;
@@ -27,8 +27,8 @@ public class BeatTimeCircleHandler : MonoBehaviour
     public float fadeDuration = 0.3f;
 
     [Header("Events")]
-    public UnityEvent<int> onHit;   // Fires with score (300 / 100 / 50)
-    public UnityEvent      onMiss;  // Fires when window expires without a click
+    public UnityEvent<int> onHit;
+    public UnityEvent      onMiss;
 
     private bool _resolved;
 
@@ -53,7 +53,7 @@ public class BeatTimeCircleHandler : MonoBehaviour
 
     void Update()
     {
-        // pressTime == 0 means the spawner hasn't configured this beat yet
+
         if (_resolved || pressTime <= 0f) return;
 
         float t = Mathf.Clamp01((Time.time - (pressTime - approachDuration)) / approachDuration);

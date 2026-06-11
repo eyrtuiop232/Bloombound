@@ -1,4 +1,4 @@
-#define NAVMESHCOMPONENTS_SHOW_NAVMESHDATA_REF
+﻿#define NAVMESHCOMPONENTS_SHOW_NAVMESHDATA_REF
 
 using System.Linq;
 using UnityEditor.IMGUI.Controls;
@@ -111,7 +111,7 @@ namespace NavMeshPlus.Components.Editors
 
             if (bs.agentTypeID != -1)
             {
-                // Draw image
+
                 const float diagramHeight = 80.0f;
                 Rect agentDiagramRect = EditorGUILayout.GetControlRect(false, diagramHeight);
                 NavMeshEditorHelpers.DrawAgentDiagram(agentDiagramRect, bs.agentRadius, bs.agentHeight, bs.agentClimb, bs.agentSlope);
@@ -150,7 +150,6 @@ namespace NavMeshPlus.Components.Editors
 
                 EditorGUILayout.PropertyField(m_DefaultArea);
 
-                // Override voxel size.
                 EditorGUILayout.PropertyField(m_OverrideVoxelSize);
 
                 using (new EditorGUI.DisabledScope(!m_OverrideVoxelSize.boolValue || m_OverrideVoxelSize.hasMultipleDifferentValues))
@@ -172,7 +171,6 @@ namespace NavMeshPlus.Components.Editors
                     EditorGUI.indentLevel--;
                 }
 
-                // Override tile size
                 EditorGUILayout.PropertyField(m_OverrideTileSize);
 
                 using (new EditorGUI.DisabledScope(!m_OverrideTileSize.boolValue || m_OverrideTileSize.hasMultipleDifferentValues))
@@ -197,7 +195,6 @@ namespace NavMeshPlus.Components.Editors
 
                 EditorGUILayout.PropertyField(m_MinRegionArea, s_Styles.m_MinRegionArea);
 
-                // Height mesh
                 using (new EditorGUI.DisabledScope(true))
                 {
                     EditorGUILayout.PropertyField(m_BuildHeightMesh);
@@ -218,8 +215,7 @@ namespace NavMeshPlus.Components.Editors
             foreach (NavMeshSurface navSurface in targets)
             {
                 var settings = navSurface.GetBuildSettings();
-                // Calculating bounds is potentially expensive when unbounded - so here we just use the center/size.
-                // It means the validation is not checking vertical voxel limit correctly when the surface is set to something else than "in volume".
+
                 var bounds = new Bounds(Vector3.zero, Vector3.zero);
                 if (navSurface.collectObjects == CollectObjects.Volume)
                 {
@@ -279,7 +275,6 @@ namespace NavMeshPlus.Components.Editors
                 GUILayout.EndHorizontal();
             }
 
-            // Show progress for the selected targets
             var bakeOperations = NavMeshAssetManager.instance.GetBakeOperations();
             for (int i = bakeOperations.Count - 1; i >= 0; --i)
             {
@@ -318,7 +313,7 @@ namespace NavMeshPlus.Components.Editors
         [DrawGizmo(GizmoType.InSelectionHierarchy | GizmoType.Active | GizmoType.Pickable)]
         static void RenderGizmoSelected(NavMeshSurface navSurface, GizmoType gizmoType)
         {
-             //navSurface.navMeshDataInstance.FlagAsInSelectionHierarchy();
+
             var method = navSurface.navMeshDataInstance.GetType().GetMethod("FlagAsInSelectionHierarchy", BindingFlags.NonPublic | BindingFlags.Instance);
             method.Invoke(navSurface.navMeshDataInstance, null);
             RenderBoxGizmo(navSurface, gizmoType, true);
@@ -355,7 +350,6 @@ namespace NavMeshPlus.Components.Editors
             var oldColor = Gizmos.color;
             var oldMatrix = Gizmos.matrix;
 
-            // Use the unscaled matrix for the NavMeshSurface
             var localToWorld = Matrix4x4.TRS(navSurface.transform.position, navSurface.transform.rotation, Vector3.one);
             Gizmos.matrix = localToWorld;
 

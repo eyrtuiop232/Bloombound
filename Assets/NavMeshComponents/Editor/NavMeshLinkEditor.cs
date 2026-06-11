@@ -1,4 +1,4 @@
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEngine;
 
 namespace NavMeshPlus.Components.Editors
@@ -36,10 +36,7 @@ namespace NavMeshPlus.Components.Editors
             s_SelectedID = 0;
             s_SelectedPoint = -1;
 
-
         }
-
-
 
         static Matrix4x4 UnscaledLocalToWorldMatrix(Transform t)
         {
@@ -56,7 +53,6 @@ namespace NavMeshPlus.Components.Editors
             var forward = worldEndPt - worldStartPt;
             var up = navLink.transform.up;
 
-            // Flatten
             forward -= Vector3.Dot(up, forward) * up;
 
             var transform = navLink.transform;
@@ -130,7 +126,6 @@ namespace NavMeshPlus.Components.Editors
             Gizmos.DrawLine(navLink.startPoint - right * rad, navLink.endPoint - right * rad);
             Gizmos.DrawLine(navLink.startPoint + right * rad, navLink.endPoint + right * rad);
         }
-
 
         [DrawGizmo(GizmoType.InSelectionHierarchy | GizmoType.Active | GizmoType.Pickable)]
 

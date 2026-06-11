@@ -1,11 +1,8 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using UnityEngine.Tilemaps;
 
-//***********************************************************************************
-// Contributed by author jl-randazzo github.com/jl-randazzo
-//***********************************************************************************
 namespace NavMeshPlus.Components.Editors
 {
     [CanEditMultipleObjects]
@@ -89,9 +86,9 @@ namespace NavMeshPlus.Components.Editors
         [CustomPropertyDrawer(typeof(NavMeshModifierTilemap.TileModifier))]
         class TileModifierPropertyDrawer : PropertyDrawer
         {
-            
+
             private static Dictionary<Object, Texture2D> Previews;
-            
+
             private Rect ClaimAdvance(ref Rect position, float height)
             {
                 Rect retVal = position;
@@ -116,7 +113,6 @@ namespace NavMeshPlus.Components.Editors
                     previewRect.x += tileRect.width;
                     tileRect.height /= 2;
 
-                    // Adding the tile selector and a preview image.
                     EditorGUI.PropertyField(tileRect, tileProperty);
                     TileBase tileBase = tileProperty.objectReferenceValue as TileBase;
                     TileData tileData = new TileData();
@@ -130,7 +126,7 @@ namespace NavMeshPlus.Components.Editors
                     {
                         try
                         {
-                            
+
                             textureToDraw = GetPreview(tileBase);
                         }
                         catch

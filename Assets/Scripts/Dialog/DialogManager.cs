@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class DialogManager : MonoBehaviour
@@ -13,7 +13,6 @@ public class DialogManager : MonoBehaviour
         public IDialogDisplay activeDisplay;
     }
 
-    // Keyed by displays[0] — the "primary" canvas that identifies the session
     private readonly Dictionary<DialogCanvas, Session> _sessions = new();
 
     private void Awake()
@@ -37,7 +36,6 @@ public class DialogManager : MonoBehaviour
         ShowOnDisplay(key, session, data);
     }
 
-    // Called by DialogCanvas when continue button is pressed
     public void Continue(DialogCanvas caller)
     {
         if (!TryFindSession(caller, out var key, out var session)) return;
@@ -55,7 +53,6 @@ public class DialogManager : MonoBehaviour
         }
     }
 
-    // Called by DialogCanvas when a choice button is pressed
     public void SelectChoice(DialogData nextDialog, DialogCanvas caller)
     {
         if (!TryFindSession(caller, out var key, out var session)) return;

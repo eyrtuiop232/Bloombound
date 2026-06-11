@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections.Generic;
 
 [RequireComponent(typeof(MeshFilter))]
@@ -136,15 +136,12 @@ public class Waterfall : MonoBehaviour
         else
             SetSplash(false, Vector3.zero);
 
-        // Enter: newly hit detectors.
         foreach (WaterfallDetector d in _currentDetectors)
         {
             if (_trackedDetectors.Add(d))
                 d.NotifyEnter();
         }
 
-        // Exit: tracked detectors no longer hit by any ray AND whose collider
-        // has genuinely left the waterfall's world-space bounds.
         float waterfallLeft  = transform.position.x - width * 0.5f;
         float waterfallRight = transform.position.x + width * 0.5f;
         float waterfallTop   = transform.position.y;
@@ -155,8 +152,6 @@ public class Waterfall : MonoBehaviour
         {
             if (_currentDetectors.Contains(d)) continue;
 
-            // Still inside waterfall bounds — raycast just missed it (e.g. gap
-            // between columns). Don't fire exit yet.
             Bounds b = d.GetComponent<Collider2D>().bounds;
             bool stillOverlaps = b.max.x > waterfallLeft  &&
                                  b.min.x < waterfallRight &&

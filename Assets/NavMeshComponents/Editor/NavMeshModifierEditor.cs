@@ -1,4 +1,4 @@
-using UnityEditor;
+﻿using UnityEditor;
 
 namespace NavMeshPlus.Components.Editors
 { 
@@ -18,10 +18,7 @@ namespace NavMeshPlus.Components.Editors
             m_IgnoreFromBuild = serializedObject.FindProperty("m_IgnoreFromBuild");
             m_OverrideArea = serializedObject.FindProperty("m_OverrideArea");
 
-
         }
-
-
 
         public override void OnInspectorGUI()
         {
