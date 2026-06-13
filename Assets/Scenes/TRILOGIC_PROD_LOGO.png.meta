@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: dc6344ef36ddb0747a94360cfcd088e8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5625431867855910837
+    second: TRILOGIC_PROD_LOGO_0
+  - first:
+      213: -2169127699812180507
+    second: TRILOGIC_PROD_LOGO_1
+  - first:
+      213: 9147460328133537821
+    second: TRILOGIC_PROD_LOGO_2
+  - first:
+      213: 6147434788183169574
+    second: TRILOGIC_PROD_LOGO_3
+  - first:
+      213: -7330327514635961596
+    second: TRILOGIC_PROD_LOGO_4
+  - first:
+      213: -5399773197768897867
+    second: TRILOGIC_PROD_LOGO_5
+  - first:
+      213: 1884744794886536360
+    second: TRILOGIC_PROD_LOGO_6
+  - first:
+      213: -6639262891021103415
+    second: TRILOGIC_PROD_LOGO_7
+  - first:
+      213: -607488538109104398
+    second: TRILOGIC_PROD_LOGO_8
+  - first:
+      213: 5570089448193612593
+    second: TRILOGIC_PROD_LOGO_9
+  - first:
+      213: 379913040461100925
+    second: TRILOGIC_PROD_LOGO_10
+  - first:
+      213: 8977003272509772093
+    second: TRILOGIC_PROD_LOGO_11
+  - first:
+      213: 5830866974287530835
+    second: TRILOGIC_PROD_LOGO_12
+  - first:
+      213: -354098621055495631
+    second: TRILOGIC_PROD_LOGO_13
+  - first:
+      213: -8204287839920589111
+    second: TRILOGIC_PROD_LOGO_14
+  - first:
+      213: -7369589725511017641
+    second: TRILOGIC_PROD_LOGO_15
+  - first:
+      213: 2757263883117192545
+    second: TRILOGIC_PROD_LOGO_16
+  - first:
+      213: -4253378102623127452
+    second: TRILOGIC_PROD_LOGO_17
+  - first:
+      213: -6195100148252958220
+    second: TRILOGIC_PROD_LOGO_18
+  - first:
+      213: 5332589720301009210
+    second: TRILOGIC_PROD_LOGO_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TRILOGIC_PROD_LOGO_0
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 279
+        width: 162
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b48494065837ee1b0800000000000000
+      internalID: -5625431867855910837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TRILOGIC_PROD_LOGO_1
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 279
+        width: 138
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ed1c3c79d5b5e1e0800000000000000
+      internalID: -2169127699812180507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TRILOGIC_PROD_LOGO_2
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 276
+        width: 84
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d10b06ff3be42fe70800000000000000
+      internalID: 9147460328133537821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TRILOGIC_PROD_LOGO_3
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 351
+        width: 108
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62a598d8e53105550800000000000000
+      internalID: 6147434788183169574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TRILOGIC_PROD_LOGO_4
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 276
+        width: 256
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40bf9d296f1754a90800000000000000
+      internalID: -7330327514635961596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TRILOGIC_PROD_LOGO_5
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 382
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba4f47c2e62015b0800000000000000
+      internalID: -5399773197768897867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TRILOGIC_PROD_LOGO_6
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 276
+        width: 127
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac7a77b765f72a10800000000000000
+      internalID: 1884744794886536360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TRILOGIC_PROD_LOGO_7
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 280
+        width: 72
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ce0142b3999cd3a0800000000000000
+      internalID: -6639262891021103415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TRILOGIC_PROD_LOGO_8
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 278
+        width: 86
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fea2e8a464c197f0800000000000000
+      internalID: -607488538109104398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TRILOGIC_PROD_LOGO_9
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 280
+        width: 46
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b5bbe67deec4d40800000000000000
+      internalID: 5570089448193612593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TRILOGIC_PROD_LOGO_10
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 365
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d77f83eb5e8b54500800000000000000
+      internalID: 379913040461100925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TRILOGIC_PROD_LOGO_11
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 279
+        width: 38
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d31d6750ae8b49c70800000000000000
+      internalID: 8977003272509772093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TRILOGIC_PROD_LOGO_12
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 280
+        width: 39
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35b07feae966be050800000000000000
+      internalID: 5830866974287530835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TRILOGIC_PROD_LOGO_13
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 278
+        width: 86
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13218842e2df51bf0800000000000000
+      internalID: -354098621055495631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TRILOGIC_PROD_LOGO_14
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 279
+        width: 67
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c6f9728da3842e80800000000000000
+      internalID: -8204287839920589111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TRILOGIC_PROD_LOGO_15
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 278
+        width: 82
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75b1c8eb035f9b990800000000000000
+      internalID: -7369589725511017641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TRILOGIC_PROD_LOGO_16
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 280
+        width: 19
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 165e631a4e4c34620800000000000000
+      internalID: 2757263883117192545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TRILOGIC_PROD_LOGO_17
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 278
+        width: 87
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46839b9a627f8f4c0800000000000000
+      internalID: -4253378102623127452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TRILOGIC_PROD_LOGO_18
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 280
+        width: 64
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f1a96bfc35960aa0800000000000000
+      internalID: -6195100148252958220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TRILOGIC_PROD_LOGO_19
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 279
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a39f07be81a210a40800000000000000
+      internalID: 5332589720301009210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TRILOGIC_PROD_LOGO_0: -5625431867855910837
+      TRILOGIC_PROD_LOGO_1: -2169127699812180507
+      TRILOGIC_PROD_LOGO_10: 379913040461100925
+      TRILOGIC_PROD_LOGO_11: 8977003272509772093
+      TRILOGIC_PROD_LOGO_12: 5830866974287530835
+      TRILOGIC_PROD_LOGO_13: -354098621055495631
+      TRILOGIC_PROD_LOGO_14: -8204287839920589111
+      TRILOGIC_PROD_LOGO_15: -7369589725511017641
+      TRILOGIC_PROD_LOGO_16: 2757263883117192545
+      TRILOGIC_PROD_LOGO_17: -4253378102623127452
+      TRILOGIC_PROD_LOGO_18: -6195100148252958220
+      TRILOGIC_PROD_LOGO_19: 5332589720301009210
+      TRILOGIC_PROD_LOGO_2: 9147460328133537821
+      TRILOGIC_PROD_LOGO_3: 6147434788183169574
+      TRILOGIC_PROD_LOGO_4: -7330327514635961596
+      TRILOGIC_PROD_LOGO_5: -5399773197768897867
+      TRILOGIC_PROD_LOGO_6: 1884744794886536360
+      TRILOGIC_PROD_LOGO_7: -6639262891021103415
+      TRILOGIC_PROD_LOGO_8: -607488538109104398
+      TRILOGIC_PROD_LOGO_9: 5570089448193612593
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
